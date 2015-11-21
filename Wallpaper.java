@@ -1,17 +1,20 @@
 package com.example.proto.wallpaper;
 
+import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-public class Wallpaper extends AppCompatActivity implements View.OnClickListener {
+public class Wallpaper extends Activity implements View.OnClickListener {
 
     ImageView display;
     Button btn;
@@ -19,6 +22,10 @@ public class Wallpaper extends AppCompatActivity implements View.OnClickListener
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wallpaper);
 
