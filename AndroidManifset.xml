@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proto.wallpaper" >
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light"
+        android:largeHeap="true">
+
+        <activity android:name=".Login"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Wallpaper"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.proto.WALLPAPPER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Selection"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.proto.SELECTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Imgone"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.proto.IMGONE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Imgtwo"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.proto.IMGTWO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Imgthree"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.proto.IMGTHREE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Imgfour"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.proto.IMGFOUR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
